@@ -5,7 +5,6 @@ src/qwt.h
 src/qwt_abstract_scale_draw.h
 src/qwt_clipper.h
 src/qwt_color_map.h
-src/qwt_compat.h
 src/qwt_column_symbol.h
 src/qwt_date.h
 src/qwt_date_scale_draw.h
@@ -138,7 +137,6 @@ src/qwt_legend_data.cpp
 src/qwt_legend_label.cpp
 src/qwt_plot.cpp
 src/qwt_plot_renderer.cpp
-src/qwt_plot_xml.cpp
 src/qwt_plot_axis.cpp
 src/qwt_plot_curve.cpp
 src/qwt_plot_dict.cpp
@@ -221,36 +219,3 @@ src/qwt_thermo.cpp
 src/qwt_wheel.cpp
 )
 
-
-
-# Header files containing Q_OBJECT declarations
-set(MOC_HEADER_FILES
-src/qwt_abstract_legend.h
-src/qwt_abstract_scale.h
-src/qwt_abstract_slider.h
-src/qwt_analog_clock.h
-src/qwt_compass.h
-src/qwt_counter.h
-src/qwt_dial.h
-src/qwt_dyngrid_layout.h
-src/qwt_knob.h
-src/qwt_legend.h
-src/qwt_legend_label.h
-src/qwt_magnifier.h
-src/qwt_panner.h
-src/qwt_picker.h
-src/qwt_plot.h
-src/qwt_plot_canvas.h
-src/qwt_plot_glcanvas.h
-src/qwt_plot_magnifier.h
-src/qwt_plot_panner.h
-src/qwt_plot_picker.h
-src/qwt_plot_renderer.h
-src/qwt_plot_zoomer.h
-src/qwt_sampling_thread.h
-src/qwt_scale_widget.h
-src/qwt_slider.h
-src/qwt_text_label.h
-src/qwt_thermo.h
-src/qwt_wheel.h
-)
