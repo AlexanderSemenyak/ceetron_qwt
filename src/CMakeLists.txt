@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 2.8.12)
 set(HEADER_FILES ${HEADER_FILES}
 src/qwt.h 
 src/qwt_abstract_scale_draw.h 
+src/qwt_axis.h 
 src/qwt_bezier.h 
 src/qwt_clipper.h 
 src/qwt_color_map.h 
@@ -31,6 +32,7 @@ src/qwt_scale_div.h
 src/qwt_scale_draw.h 
 src/qwt_scale_engine.h 
 src/qwt_scale_map.h 
+src/qwt_scale_map_table.h 
 src/qwt_spline.h 
 src/qwt_spline_basis.h 
 src/qwt_spline_parametrization.h 
@@ -97,7 +99,6 @@ src/qwt_widget_overlay.cpp
 
 # QwtPlot
 set(HEADER_FILES ${HEADER_FILES}
-src/qwt_axis.h 
 src/qwt_axis_id.h 
 src/qwt_curve_fitter.h 
 src/qwt_spline_curve_fitter.h 
@@ -152,6 +153,7 @@ src/qwt_point_data.h
 src/qwt_scale_widget.h )
 
 set(SOURCE_FILES ${SOURCE_FILES}
+src/qwt_axis_id.cpp 
 src/qwt_curve_fitter.cpp 
 src/qwt_spline_curve_fitter.cpp 
 src/qwt_weeding_curve_fitter.cpp 
