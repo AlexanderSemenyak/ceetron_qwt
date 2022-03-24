@@ -1820,8 +1820,14 @@ void QwtPlotLayout::activate( const QwtPlot* plot,
     // corners to extend the axes, so that the label texts
     // left/right of the min/max ticks are moved into them.
 
-    m_data->engine.alignScales( options, layoutData,
-        m_data->canvasRect, m_data->scaleRects );
+// START COMMENT SECTION
+// 
+// MSJ 2022-03-15 The aligning of scales makes one of the widgets fill the whole width and covering the other axis
+// 
+//    m_data->engine.alignScales( options, layoutData,
+//        m_data->canvasRect, m_data->scaleRects );
+// 
+// END COMMENT SECTION
 
     if ( !m_data->legendRect.isEmpty() )
     {
